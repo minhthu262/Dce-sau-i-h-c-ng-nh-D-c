@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Cảm ơn</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Cảm ơn bạn đã quan tâm đến nghiên cứu 🙏</h2>
+  <p>Khảo sát này phù hợp với những người có quan tâm đến học sau đại học.</p>
+</body>
+</html>
