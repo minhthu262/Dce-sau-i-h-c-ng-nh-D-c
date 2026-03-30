@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Khảo sát sau đại học Dược</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      margin-top: 100px;
+    }
+    button {
+      padding: 12px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Bạn có đang quan tâm hoặc có ý định học sau đại học trong lĩnh vực Dược không?</h2>
+  <p style="color: gray;">Khảo sát này dành cho những người có quan tâm đến học sau đại học.</p>
+
+  <button onclick="handleChoice('yes')">Có</button>
+  <button onclick="handleChoice('maybe')">Chưa chắc</button>
+  <button onclick="handleChoice('no')">Không</button>
+
+  <script>
+    function handleChoice(answer) {
+
+      if (answer === "no") {
+        window.location.href = "thankyou.html";
+      } else {
+
+        var surveys = [
+          "https://forms.gle/FORM1",
+          "https://forms.gle/FORM2",
+          "https://forms.gle/FORM3"
+        ];
+
+        var randomIndex = Math.floor(Math.random() * surveys.length);
+        window.location.href = surveys[randomIndex];
+      }
+    }
+  </script>
+
+</body>
+</html>
